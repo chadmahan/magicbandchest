@@ -245,7 +245,7 @@ class MagicBand(cli.CommandLineInterface):
         while pygame.mixer.music.get_busy() == True:
             i += 1
             time.sleep(1)
-            if i == 12
+            if i == 12:
                 bus.write_byte_data(0x10, 1, 0xFF)
                 time.sleep(.02)
                 bus.write_byte_data(0x10, 1, 0x00)
