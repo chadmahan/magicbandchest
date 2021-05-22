@@ -192,9 +192,6 @@ class MagicBand(cli.CommandLineInterface):
                 config['scanned']['041a544a796580'] = True
                 config.write()
                 self.playOpenDoor(config['sequences']['chad'])
-                time.sleep(5)
-                self.openDoor()
-
             else:
                 config['scanned']['041f3baa826880'] = False
                 config['scanned']['04247dba826880'] = False
